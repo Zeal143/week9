@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Destinations Page</title>
+      <!-- Bootstrap CSS for responsive layout -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <!-- Bootstrap Javascript for responsive layout -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <!-- Font Awesome for icons -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-compass me-2"></i> <!--me-2: Adds margin to the right of the icon-->
+                Travel Explorer
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>      
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!--Pushes navigation to the right -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinationsPage.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUSPage.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destinations Section -->
+    <section class="container py-5" id="destinations">
+        <br>
+        <br>
+        <h2 id=1 class="text-center mb-5">Featured Destinations</h2>
+        
+        <!-- Destinations Grid -->
+        <div class="row" id="destinationsGrid">
+            <!-- Santorini Luxury Escape -->
+            <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="luxury">
+                <div class="card destination-card h-100 shadow-sm">
+                    <div class="position-relative overflow-hidden">
+                        <img src="../img/photo1.jpg" class="card-img-top destination-image" alt="Santorini Luxury Escape">
+                        <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,200</div>
+                        <span class="badge bg-danger destination-badge position-absolute top-0 start-0 m-3 rounded-pill">luxury</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Santorini Luxury Escape</h5>
+                        <p class="card-text">Experience breathtaking sunsets and private villa stays in this Greek paradise.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>7 days
+                            </small>
+                            <span class="badge bg-warning">Featured</span>
+                        </div>
+                </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-primary w-100 inquire-btn" data-destination="Santorini Luxury Escape">
+                            Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Costa Rican Adventure -->
+            <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+                <div class="card destination-card h-100 shadow-sm">
+                    <div class="position-relative overflow-hidden">
+                        <img src="../img/photo2.jpg" class="card-img-top destination-image" alt="Costa Rican Adventure">
+                        <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$2,100</div>
+                        <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Costa Rican Adventure</h5>
+                        <p class="card-text">Zip-line through rainforests and surf Pacific waves in this eco-adventure.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>10 days
+                            </small>
+                            <span class="badge bg-warning">Featured</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-primary w-100 inquire-btn" data-destination="Costa Rican Adventure">
+                            Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kyoto Cultural Journey -->
+            <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="cultural">
+                <div class="card destination-card h-100 shadow-sm">
+                    <div class="position-relative overflow-hidden">
+                        <img src="../img/photo3.jpg" class="card-img-top destination-image" alt="Kyoto Cultural Journey">
+                        <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$4,500</div>
+                        <span class="badge bg-info destination-badge position-absolute top-0 start-0 m-3">cultural</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Kyoto Cultural Journey</h5>
+                        <p class="card-text">Immerse yourself in ancient temples, tea ceremonies, and traditional ryokans.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>12 days
+                            </small>
+                            <span class="badge bg-warning">Featured</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-primary w-100 inquire-btn" data-destination="Kyoto Cultural Journey">
+                            Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Maldives Overwater Paradise -->
+            <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="luxury">
+                <div class="card destination-card h-100 shadow-sm">
+                    <div class="position-relative overflow-hidden">
+                        <img src="../img/photo4.jpg" class="card-img-top destination-image" alt="Maldives Overwater Paradise">
+                        <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$5,800</div>
+                        <span class="badge bg-danger destination-badge position-absolute top-0 start-0 m-3">luxury</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives Overwater Paradise</h5>
+                        <p class="card-text">Private overwater bungalows with direct lagoon access and personal butler service.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>8 days
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-primary w-100 inquire-btn" data-destination="Maldives Overwater Paradise">
+                            Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Patagonia Trekking Expedition -->
+            <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+                <div class="card destination-card h-100 shadow-sm">
+                    <div class="position-relative overflow-hidden">
+                        <img src="../img/photo5.jpg" class="card-img-top destination-image" alt="Patagonia Trekking Expedition">
+                        <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,900</div>
+                        <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Patagonia Trekking Expedition</h5>
+                        <p class="card-text">Challenge yourself with epic hikes through Torres del Paine National Park.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>14 days
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-primary w-100 inquire-btn" data-destination="Patagonia Trekking Expedition">
+                            Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Italian Culinary Tour -->
+            <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="cultural">
+                <div class="card destination-card h-100 shadow-sm">
+                    <div class="position-relative overflow-hidden">
+                        <img src="../img/photo6.jpg" class="card-img-top destination-image" alt="Italian Culinary Tour">
+                        <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$4,200</div>
+                        <span class="badge bg-info destination-badge position-absolute top-0 start-0 m-3">cultural</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Italian Culinary Tour</h5>
+                        <p class="card-text">Cook with master chefs and taste your way through Tuscany and Sicily.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>10 days
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-primary w-100 inquire-btn" data-destination="Italian Culinary Tour">
+                            Inquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- -->
+        <!-- Bali Wellness Retreat -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="luxury">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo7.jpg" class="card-img-top destination-image" alt="Bali Wellness Retreat">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$2,800</div>
+                    <span class="badge bg-danger destination-badge position-absolute top-0 start-0 m-3">luxury</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Bali Wellness Retreat</h5>
+                    <p class="card-text">Rejuvenate with yoga, spa treatments, and organic cuisine in tropical serenity.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>9 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Bali Wellness Retreat">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Zealand South Island -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo8.jpg" class="card-img-top destination-image" alt="New Zealand South Island">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,600</div>
+                    <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">adventure</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">New Zealand South Island</h5>
+                    <p class="card-text">Glaciers, fjords, and adrenaline activities in Middle-earth landscapes.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>11 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="New Zealand South Island">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moroccan Souk Discovery -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="cultural">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo9.jpg" class="card-img-top destination-image" alt="Moroccan Souk Discovery">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$2,900</div>
+                    <span class="badge bg-info destination-badge position-absolute top-0 start-0 m-3">cultural</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Moroccan Souk Discovery</h5>
+                    <p class="card-text">Get lost in vibrant markets and sleep under the stars in the Sahara Desert.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>8 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Moroccan Souk Discovery">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thailand Island Hopping -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="beach">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo10.jpg" class="card-img-top destination-image" alt="Thailand Island Hopping">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$2,400</div>
+                    <span class="badge bg-primary destination-badge position-absolute top-0 start-0 m-3">beach</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Thailand Island Hopping</h5>
+                    <p class="card-text">Crystal clear waters, white sand beaches, and vibrant marine life.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>7 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Thailand Island Hopping">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiss Alpine Adventure -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo11.jpg" class="card-img-top destination-image" alt="Swiss Alpine Adventure">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$4,100</div>
+                    <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">adventure</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Swiss Alpine Adventure</h5>
+                    <p class="card-text">Mountain railways, charming villages, and breathtaking alpine scenery.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>9 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Swiss Alpine Adventure">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dubai Luxury Experience -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="luxury">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo12.jpg" class="card-img-top destination-image" alt="Dubai Luxury Experience">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,700</div>
+                    <span class="badge bg-danger destination-badge position-absolute top-0 start-0 m-3">luxury</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Dubai Luxury Experience</h5>
+                    <p class="card-text">Desert safaris, world-class shopping, and iconic Burj Khalifa views.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>6 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Dubai Luxury Experience">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Egyptian History Tour -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="cultural">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo13.jpg" class="card-img-top destination-image" alt="Egyptian History Tour">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,300</div>
+                    <span class="badge bg-info destination-badge position-absolute top-0 start-0 m-3">cultural</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Egyptian History Tour</h5>
+                    <p class="card-text">Pyramids, temples, and Nile cruises through ancient civilization.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>10 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Egyptian History Tour">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hawaiian Paradise -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="beach">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo14.jpg" class="card-img-top destination-image" alt="Hawaiian Paradise">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,500</div>
+                    <span class="badge bg-primary destination-badge position-absolute top-0 start-0 m-3">beach</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Hawaiian Paradise</h5>
+                    <p class="card-text">Volcanoes, waterfalls, and traditional luaus across multiple islands.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>8 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="Hawaiian Paradise">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- African Safari Expedition -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo15.jpg" class="card-img-top destination-image" alt="African Safari Expedition">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$6,200</div>
+                    <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">adventure</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">African Safari Expedition</h5>
+                    <p class="card-text">Big Five wildlife viewing in luxury tented camps with expert guides.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>12 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="African Safari Expedition">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Iceland Northern Lights -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo16.jpg" class="card-img-top destination-image" alt="African Safari Expedition">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$4,800</div>
+                    <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">adventure</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Iceland Northern Lights Experience</h5>
+                    <p class="card-text">Chase the aurora across icy landscapes and geothermal wonders.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>9 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="African Safari Expedition">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+       <!-- Tokyo Neon Nights -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo17.jpg" class="card-img-top destination-image" alt="African Safari Expedition">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$3,900</div>
+                    <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">cultural</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Tokyo Neon Nights</h5>
+                    <p class="card-text">Dive into Japan’s futuristic cityscape filled with lights, cuisine, and culture.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>8 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="African Safari Expedition">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+       <!-- Norway Midnight Sun Cruise -->
+        <div class="col-lg-4 col-md-6 mb-4 destination-item" data-category="adventure">
+            <div class="card destination-card h-100 shadow-sm">
+                <div class="position-relative overflow-hidden">
+                    <img src="../img/photo18.jpg" class="card-img-top destination-image h-100 w-20" alt="African Safari Expedition">
+                    <div class="destination-price bg-primary text-white px-3 py-1 position-absolute top-0 end-0 m-3 rounded-pill">$6,000</div>
+                    <span class="badge bg-success destination-badge position-absolute top-0 start-0 m-3">luxury</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Norway Midnight Sun Cruise</h5>
+                    <p class="card-text">Sail under the endless daylight of Norway’s summer skies.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-clock me-1"></i>11 days
+                        </small>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100 inquire-btn" data-destination="African Safari Expedition">
+                        Inquire Now
+                    </button>
+                </div>
+            </div>
+        </div>                             
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Travel Explorer</h5>
+                    <p>Boutique Travel Experiences Curated Just For You</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+                    <p>contact@travelexplorer.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

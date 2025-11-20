@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Contact Us Page</title>
+      <!-- Bootstrap CSS for responsive layout -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <!-- Bootstrap Javascript for responsive layout -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <!-- Font Awesome for icons -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-compass me-2"></i> <!--me-2: Adds margin to the right of the icon-->
+                Travel Explorer
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!--Pushes navigation to the right (margin-start: auto)-->
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinationsPage.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactUSPage.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container text-center">
+        	<br>
+        	<br>
+            <br>
+            <h1>Start Your Journey</h1>
+            <p>Let's craft your perfect travel experience together</p>
+            <br>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="container py-3">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="contact-form-container bg-light p-4 rounded">
+                    <form id="contactForm" novalidate>
+                        <!-- Name and Email Row -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">Please provide your full name.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        
+                        <!-- Query Type Dropdown -->
+                        <div class="mb-3">
+                            <label for="queryType" class="form-label">Query Type *</label>
+                            <select class="form-select" id="queryType" name="queryType" required>
+                                <option value="">Select query type...</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="payment">Payment Question</option>
+                                <option value="general">General Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a query type.</div>
+                        </div>
+                        
+                        <!-- Message Textarea -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required minlength="20"></textarea>
+                            <div class="invalid-feedback">Please provide a message with at least 20 characters.</div>
+                            <div class="form-text">Minimum 20 characters required.</div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-dark btn-lg">Send Message</button>
+                    </form>
+                    
+                    <!-- Messages Container for form feedback -->
+                    <div id="formMessages" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center">
+                <!-- Phone Info -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt fa-2x mb-3 text-primary"></i>
+                        <h5>Call Us</h5>
+                        <p>+353 143431099</p>
+                        <p class="text-muted">Mon-Fri: 9AM-5PM</p>
+                    </div>
+                </div>
+                <!-- Email Info -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope fa-2x mb-3 text-primary"></i>
+                        <h5>Email Us</h5>
+                        <p>contact@travelexplorer.com</p>
+                        <p class="text-muted">Response within 24 hours</p>
+                    </div>
+                </div>
+                <!-- Address Info -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt fa-2x mb-3 text-primary"></i>
+                        <h5>Visit Us</h5>
+                        <p>Creigton St.</p>
+                        <p class="text-muted">Dublin 2, Ireland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/form-validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,23 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>week8</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Explorer</title>
+
+  <!-- Bootstrap CSS for responsive layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap Javascript for responsive layout -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<br>
-	<p>This sentence is using the &euro; symbol</p>
-	<p>This sentence is using the &cent; symbol</p>
-	<p>This sentence is using the &pound; symbol</p>
-	<p>This sentence is using the &yen; symbol</p>
-	<br>
-	<p>This sentence is using the &copy; symbol</p>
-	<p>This sentence is using the &reg; symbol</p>
-	<br>
-	<p>This sentence is using the &nbsp; non-breaking space symbol</p>
-	<p>This sentence is using the &lt; less than symbol,the &gt; greater symbol</p>
-	<p>This sentence is using the &amp; symbol</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-compass me-2"></i> <!-- Adds margin to the right of the icon-->
+                Travel Explorer
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!--Pushes navigation to the right (margin-start: auto)-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/destinationsPage.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contactUsPage.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Simple Banner Slider -->
+    <section class="sliders">
+      <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="img/photo16.jpg" class="d-block w-100 carousel-img" alt="Photo 16">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+              <h1 class="title">Discover Amazing Journeys</h1>
+              <p class="tagline">Unforgettable Travel Experiences</p>
+              <a href="pages/destinationsPage.html" class="btn btn-primary bg-light text-dark btn-lg">Explore Destinations</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="img/photo2.jpg" class="d-block w-100 carousel-img" alt="Photo 2">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+              <h1 class="title">Discover Amazing Journeys</h1>
+              <p class="tagline">Unforgettable Travel Experiences</p>
+              <a href="pages/destinationsPage.html" class="btn btn-primary bg-light text-dark btn-lg">Explore Destinations</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="img/photo18.jpg" class="d-block w-100 carousel-img" alt="Photo 18">
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+              <h1 class="title">Discover Amazing Journeys</h1>
+              <p class="tagline">Unforgettable Travel Experiences</p>
+              <a href="pages/destinationsPage.html" class="btn btn-primary bg-light text-dark btn-lg">Explore Destinations</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Description About Service-->
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title">Welcome to Travel Explorer</h2>
+                <p class="lead">As a boutique travel agency, we specialize in crafting unique, personalized journeys that go beyond the ordinary. Our expertise lies in creating immersive experiences that connect you with the heart and soul of each destination.</p>
+                <p>We believe travel should be transformative, not transactional. That's why we hand-pick every element of your journey, from secluded luxury resorts to authentic local encounters that most travelers never discover.</p>
+            </div>
+            <div class="col-lg-6">
+                            <div class="d-flex align-items-center p-3 mb-4 bg-white rounded shadow-sm">
+                                <i class="fas fa-gem fa-2x text-info me-4"></i>
+                                <span class="fs-5 fw-semibold text-dark">Boutique & Exclusive</span>
+                            </div>
+                            <div class="d-flex align-items-center p-3 mb-4 bg-white rounded shadow-sm">
+                                <i class="fas fa-map-marked-alt fa-2x text-success me-4"></i>
+                                <span class="fs-5 fw-semibold text-dark">Unique Itineraries</span>
+                            </div>
+                            <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+                                <i class="fas fa-headset fa-2x text-warning me-4"></i>
+                                <span class="fs-5 fw-semibold text-dark">24/7 Personal Concierge</span>
+                            </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Comment Section -->
+   <div id="testimonialCarousel" class="carousel slide text-center py-5 bg-light" data-bs-ride="carousel" data-bs-interval="3000">
+    <!--Heading -->
+      <h2 class="mb-4 fw-bold">What Our Customers Say</h2>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial mx-auto" style="max-width:800px;">
+            <p class="fs-5 fst-italic">
+              "Travel Explorer crafted the most incredible journey through Japan. Every detail was perfect,
+              from the private tea ceremonies to the hidden ryokan stays."
+            </p>
+            <cite class="d-block mt-3 fw-semibold">– Sarah M., Tokyo Explorer</cite>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="testimonial mx-auto" style="max-width:800px;">
+            <p class="fs-5 fst-italic">
+              "Their attention to detail and access to exclusive experiences made our African safari truly
+              once-in-a-lifetime. Absolutely exceptional service!"
+            </p>
+            <cite class="d-block mt-3 fw-semibold">– James &amp; Lisa R., Safari Adventurers</cite>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="testimonial mx-auto" style="max-width:800px;">
+            <p class="fs-5 fst-italic">
+              "The Italian culinary tour was beyond our expectations. We dined in private villas and learned
+              from master chefs. Pure magic!"
+            </p>
+            <cite class="d-block mt-3 fw-semibold">– Maria C., Food &amp; Wine Lover</cite>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button"
+              data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next " type="button"
+              data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Travel Explorer</h5>
+                    <p>Boutique Travel Experiences Curated Just For You</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+                    <p>contact@travelexplorer.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 </html>
